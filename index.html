@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    
+    <div class = "container">
+        <div class = "row">
+            <div class = "col text-center my-4">
+                <h1 class = "fs-2">Trending Item</h1>
+                <div class = "underline mx-auto mt-3"></div>
+            </div>
+        </div>
+
+        <div class = "row mt-3 mb-4 button-group filter-button-group">
+            <div class = "col d-flex justify-content-center">
+                <button type = "button" data-filter = "*" class = "btn btn-primary mx-1 text-dark">All</button>
+                <button type = "button" data-filter = ".electronic" class = "btn btn-primary mx-1 text-dark">Electronic</button>
+                <button type = "button" data-filter = ".clothing" class = "btn btn-primary mx-1 text-dark">Clothing</button>
+                <button type = "button" data-filter = ".furniture" class = "btn btn-primary mx-1 text-dark">Furniture</button>
+            </div>
+        </div>
+
+        <div class = "row justify-content-center g-4" id = "product-list">
+            <div class = "col-lg-4 col-md-6 electronic">
+                <div class = "product-item">
+                    <div class = "product-img">
+                        <img src = "images/product_img_1.jpg" class = "img-fluid d-block mx-auto">
+                    </div>
+                    <div class = "product-content text-center py-3">
+                        <span class = "d-block text-uppercase fw-bold">product name</span>
+                        <span class = "d-block">$ 68.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-lg-4 col-md-6 electronic">
+                <div class = "product-item">
+                    <div class = "product-img">
+                        <img src = "images/product_img_2.jpg" class = "img-fluid d-block mx-auto">
+                    </div>
+                    <div class = "product-content text-center py-3">
+                        <span class = "d-block text-uppercase fw-bold">product name</span>
+                        <span class = "d-block">$ 68.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-lg-4 col-md-6 clothing">
+                <div class = "product-item">
+                    <div class = "product-img">
+                        <img src = "images/product_img_3.jpg" class = "img-fluid d-block mx-auto">
+                    </div>
+                    <div class = "product-content text-center py-3">
+                        <span class = "d-block text-uppercase fw-bold">product name</span>
+                        <span class = "d-block">$ 68.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-lg-4 col-md-6 clothing">
+                <div class = "product-item">
+                    <div class = "product-img">
+                        <img src = "images/product_img_4.jpg" class = "img-fluid d-block mx-auto">
+                    </div>
+                    <div class = "product-content text-center py-3">
+                        <span class = "d-block text-uppercase fw-bold">product name</span>
+                        <span class = "d-block">$ 68.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-lg-4 col-md-6 electronic">
+                <div class = "product-item">
+                    <div class = "product-img">
+                        <img src = "images/product_img_5.jpg" class = "img-fluid d-block mx-auto">
+                    </div>
+                    <div class = "product-content text-center py-3">
+                        <span class = "d-block text-uppercase fw-bold">product name</span>
+                        <span class = "d-block">$ 68.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-lg-4 col-md-6 furniture">
+                <div class = "product-item">
+                    <div class = "product-img">
+                        <img src = "images/product_img_6.jpg" class = "img-fluid d-block mx-auto">
+                    </div>
+                    <div class = "product-content text-center py-3">
+                        <span class = "d-block text-uppercase fw-bold">product name</span>
+                        <span class = "d-block">$ 68.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-lg-4 col-md-6 electronic">
+                <div class = "product-item">
+                    <div class = "product-img">
+                        <img src = "images/product_img_7.jpg" class = "img-fluid d-block mx-auto">
+                    </div>
+                    <div class = "product-content text-center py-3">
+                        <span class = "d-block text-uppercase fw-bold">product name</span>
+                        <span class = "d-block">$ 68.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-lg-4 col-md-6 clothing">
+                <div class = "product-item">
+                    <div class = "product-img">
+                        <img src = "images/product_img_8.jpg" class = "img-fluid d-block mx-auto">
+                    </div>
+                    <div class = "product-content text-center py-3">
+                        <span class = "d-block text-uppercase fw-bold">product name</span>
+                        <span class = "d-block">$ 68.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- isotope plugin -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+    <script src = "script.js"></script>
+</body>
+</html>
